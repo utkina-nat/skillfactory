@@ -1,0 +1,14 @@
+money = int(input("Enter sum: ")) 
+### у нас есть словарь со значениями процентных ставок в банках
+per_cent = {'ТКБ': 5.6, 'СКБ': 5.9, 'ВТБ': 4.28, 'СБЕР': 4.0} 
+### объявляем депозиты в список
+deposit = []
+
+for value in per_cent.values():
+   result = int(money / 100 * value)  
+   deposit.append(result)
+print(deposit)
+### находим максимальное значение 
+
+deposit_max = max(deposit)
+print(deposit_max)
